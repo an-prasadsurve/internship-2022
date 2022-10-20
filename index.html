@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><h1><u><b>STUDENT MARKSHEET</b></u></h1></title>
+  </head>
+  <body>
+  <center>
+  <h1><u><b>STUDENT MARKSHEET</b></u></h1>
+ </center>
+ 
+
+
+
+
+
+    <div class="container">
+
+    <div>
+    <fieldset>
+    <legend><u>STUDENT INFORMATION</u></legend>
+    <label for="name">Name:</label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="n" name="name">  
+    <label for="fname"> Father Name:</label> 
+    <input type="text" id="fn" name="fname"><br><br>
+    
+    <label for="iname">Institute Name:</label>&nbsp
+    <input type="text" id="in" name="iname" >  
+    <label for="batch">   Batch:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="b" name="batch"><br><br>  
+    </fieldset>
+      <br><br>
+    </div>
+  
+
+
+
+      <div>
+      <fieldset>
+      <legend><u>SUBJECTS MARKS</u></legend>
+        <div class="book1">
+          <label>Office automation :</label>
+          <input id="bookOne" type="number" name="" placeholder="marks" />Out of 100
+        </div>
+        <div class="book2">
+          <label>Web Designing:</label>&nbsp &nbsp 
+          &nbsp <input id="bookTwo" type="number" name="" placeholder="marks" />Out of 100
+        </div>
+        <div class="book3">
+          <label>IT :</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+          <input id="bookThree" type="number" name="" placeholder="marks" />Out of 100
+        </div>
+        <div class="book4">
+          <label>C# programming:</label>&nbsp &nbsp 
+          <input id="bookFour" type="number" name="" placeholder="marks" />Out of 100
+        </div>
+      </fieldset>
+     
+        <div>
+          <button onclick=" calculate()">SUBMIT</button>
+        
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div>
+        <table border="1" WIDTH="25%">
+
+        <tr>
+        <th colspan="2">STUDENT INFORMATION</th>
+       
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td id="n1"></td>
+       
+      </tr>
+      <tr>
+         <td>Father Name:</td>
+        <td id="fn1"></td> 
+      </tr>
+       <tr>
+         <td>Institue Name:</td>
+        <td id="in1"></td> 
+      </tr> <tr>
+         <td>Batch:</td>
+        <td id="b1"></td> 
+      </tr>
+      <tr>
+        <th colspan="2">SUBJECTS MARKS</th>
+       
+      </tr>
+      <tr>
+        <td>Office Automation:</td>
+        <td  id="oa"></td>
+       
+      </tr>
+      <tr>
+         <td>Web Designing:</td>
+        <td  id="wd"></td> 
+      </tr>
+       <tr>
+         <td>IT:</td>
+        <td id="it"></td> 
+      </tr> <tr>
+         <td>C# Programming:</td>
+        <td id="cp"></td> 
+      </tr>
+      <tr>
+        <th colspan="2">MARKS RESULT</th>
+
+
+
+
+
+        
+          <tr>
+            <td>Total</td>
+            <td id="obtain"></td>
+          </tr>
+
+          <tr>
+            <td>Percentage:</td>
+            <td id="percentage"></td>
+          </tr>
+
+          <tr>
+            <td>Grade:</td>
+            <td id="grade"></td>
+          </tr>
+         
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
