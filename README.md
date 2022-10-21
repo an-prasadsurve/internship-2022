@@ -1,4 +1,4 @@
 # internship-2022
 
-https://web-platform-kfpeah.stackblitz.io
+https://web-platform-ci7xvs.stackblitz.io
 
