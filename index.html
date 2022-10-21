@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+    <!-- <script src = "index.js"></script> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+  </head>
+  <body>
+    <div class="container">
+      <form method="GET" name="expense">
+        <p>Add a new item :</p>
+        <div class="row">
+          <div class="column">
+            <label for="type"> Type : </label>
+            <select name="type">
+              <option value="card">Card</option>
+              <option value="cash">Cash</option>
+            </select>
+          </div>
+          <div class="column">
+            <label for="name"> Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="nm"
+              placeholder="What did you spend on ?"
+            />
+            <br /><br />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <label for="date"> Date : </label>
+            <input type="date" name="date" id="dt" />
+          </div>
+          <div class="column">
+            <label for="amount"> Amount : </label>
+            <input type="number" name="amount" id="amt" min="1" placeholder = "How much ?" step="any" />
+            <br /><br />
+          </div>
+        </div>
+        <input
+          type="button"
+          id="btn"
+          name="add"
+          value="Add a new expense"
+          class="button"
+          onclick="addValue();"
+        />
+
+        <table id="tbl" class="table">
+          <thead>
+            <th>type</th>
+            <th>name</th>
+            <th>date</th>
+            <th>amount</th>
+          </thead>
+          <tbody>
+		  
+		  </tbody>
+		  <tfoot>
+		  <tr>
+		  <td></td>
+		  <td></td>
+		  <td>Total :</td>
+		  <td name = "col4_total" value = "total(amount);"></td>
+		  <!--<td>1500</td>-->
+		  </tr>
+		  </tfoot>
+		  
+        </table>
+      </form>
+
+      <script type="text/javascript">
+        function addValue() {
+          var type = document.expense.type.value;
+          var name = document.expense.name.value;
+          var date = document.expense.date.value;
+          var amount = document.expense.amount.value;
+
+          var tr = document.createElement('tr');
+
+          var td1 = tr.appendChild(document.createElement('td'));
+          var td2 = tr.appendChild(document.createElement('td'));
+          var td3 = tr.appendChild(document.createElement('td'));
+          var td4 = tr.appendChild(document.createElement('td'));
+
+          td1.innerHTML = type;
+          td2.innerHTML = name;
+          td3.innerHTML = date;
+          td4.innerHTML = amount;
+
+          document.getElementById('tbl').appendChild(tr);
+        }
+			function total(amount)
+		  {
+		      var base = document.getElementById(amount);
+			  
+			  var amt_sum = 0;
+			  for(let index=0;index<amount.length;index++)
+			  {
+			    // var amt_base = amount[index].value;
+				  amt_sum += amount[index].value;
+				 //ls_sum = +ls_sum + +ls_base;
+				 amt_sum = +amt_sum + +amt_base;
+			  }
+			  //return amt_sum;
+			  document.getElementById("Total").innerHTML = "Total = $"+amt_sum;
+		  }
+
+      </script>
+      <br/><br/>
+    </div>
+  </body>
+</html>

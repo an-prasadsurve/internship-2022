@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1cm;
+}
+
+.container {
+  display: grid;
+  box-sizing: border-box;
+  grid-gap: 10px;
+  padding: 30px;
+  padding-left: 300px;
+}
+form {
+  display: grid;
+  top: 50%;
+  width: 90%;
+  padding: 25px;
+  border-radius: 2px;
+  background: gray;
+  box-shadow: 0 0 1px #fff;
+  color: white;
+}
+select {
+  padding: 5px 5px;
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input[type='text'] {
+  width: 60%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input[type='date'] {
+  width: 60%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input[type='number'] {
+  width: 60%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.button {
+  background-color: green;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 250px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  width: 30%;
+  font-size: 14px;
+}
+
+.row {
+  margin: 15px 0;
+  border-radius: 15px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+table,th,td
+{
+	 border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+  color : black;
+  border: 1px solid white;
+  
+}
+
+tr:nth-child(odd)
+ {
+
+   background-color: #DCDCDC;
+ }
+ tr:nth-child(even)
+ {
+
+   background-color: #fff;
+ }
