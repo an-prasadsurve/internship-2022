@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NotePad</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="font-family">
+        <form>
+         <select class="font" onchange="changeFont(this)">
+                <option selected>fonts</option>
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Candara">Candara</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Palatino">Palatino</option>
+                <option value="Andale Mono">Andale Mono</option>
+                <option value="Bradley Hand">Bradley Hand</option>
+                <option value="Luminari">Luminari</option>
+                <option value="Comic Sans MS">Comic Sans MS </option>
+            </select> 
+        
+
+            <input type="button" value="B" class="btn" style="font-weight: bold;" onclick="bold()">
+            <input type="button" value="i" class="btn" style="font-style: italic;" onclick="italic()">
+            <input type="button" value="u" class="btn" style="text-decoration: underline;" onclick="underline()">
+            <input type="button" value="n" class="btn" onclick="new_line()">
+            <br>
+            <textarea placeholder="Enter text here..." id="content" rows="10" cols="48"></textarea>
+            
+            <br>
+            <p align="center"><input type="reset" value="clear"></p>
+        </form>
+        </div>
+</body>
+</html>
