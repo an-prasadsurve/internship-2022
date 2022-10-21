@@ -67,3 +67,37 @@ function calculate()
   }
   return false;
 }
+
+
+function reset()
+{
+
+  document.getElementById('n').value = "";
+  document.getElementById('fn').value = "";         
+  document.getElementById('in').value = "";
+  document.getElementById('b').value = ""; 
+  document.getElementById('bookOne').value = "";
+  document.getElementById('bookTwo').value = "";     
+  document.getElementById('bookThree').value = "";
+  document.getElementById('bookFour').value = ""; 
+
+
+  document.getElementById('n1').innerText=""; 
+  document.getElementById('fn1').innerText="";          
+  document.getElementById('in1').innerText=""; 
+  document.getElementById('b1').innerText=""; 
+
+  document.getElementById('oa').innerText=""; 
+  document.getElementById('wd').innerText=""; 
+  document.getElementById('it').innerText="";          
+  document.getElementById('cp').innerText=""; 
+  document.getElementById('obtain').innerText=""; 
+
+  document.getElementById('percentage').innerText=""; 
+  document.getElementById('grade').innerText=""; 
+
+
+
+
+
+}
