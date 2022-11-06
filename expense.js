@@ -1,3 +1,4 @@
+//create function
 function Add()
 {   
     var types=document.getElementById("types").value;
