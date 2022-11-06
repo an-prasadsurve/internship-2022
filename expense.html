@@ -1,0 +1,74 @@
+<html>
+    <head> <title>Expense Manager</title>
+        <script src="expense.js">
+
+        </script>
+        <style>
+            body{ background-color: grey;}
+            #btn{background-color: green;color: white;width: 150px;height: 50px;}
+            #l1{width: 150 px;text-align: center;height: 110px;color: rgb(175, 186, 195) ;}
+            td{width: 300px;height: 50px;text-align: center; padding: 20px;}
+            table.tb2 {font-family: arial, sans-serif;border-collapse: collapse;width: 50%;}
+            .tb2 td, .tb2 th {border: 1px solid #d6cfcf;text-align: left;padding: 8px;}
+            .tb2 tr:nth-child(even) { background-color: #ffffff;}
+    
+        </style>
+        
+    </head> 
+     <body>
+        <center> 
+            <label id="l1" for="Type"><h3>Add a new item:</h3> </label>
+        <form> 
+        <table id="show" >
+                <tr>
+                    <td> 
+                        <label for="Type">Type:</label>
+                        <select id="types" name="types">
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        </select>
+                    </td>
+                
+                    <td>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value="name" id="name">
+                    </td>
+               </tr>
+               
+               
+               <tr>
+                    <td>
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" value="" id="date">
+                    </td>
+                
+                    <td>
+                        <label for="ammount">Amount:</label>
+                        <input type="text" name="amount" value="" id="amt">
+                    </td>
+                </tr>
+             
+        </table>
+                <input type="button" value="Add a new  expensive" onclick="Add()" id="btn"><br><br>
+        
+
+    <table id="tb2" class="table" border="1">
+       <thead>
+            <tr>
+                <th scope="col">type</th>
+                <th scope="col">name</th>
+                <th scope="col">date</th>
+                <th scope="col">amount</th>
+            </tr>
+        </thead>
+    
+        <tbody> </tbody>
+        <tfoot></tfoot>
+
+            
+    </table>
+</form>
+
+</center>
+</body>
+</html>
