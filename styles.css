@@ -1,0 +1,19 @@
+p {
+    color: green;
+    font: size 20px;
+    background-color: rgba(211, 211, 211, 0.774);
+  }
+  button {
+    color: white;
+    background-color: rgb(46, 132, 161);
+    border: none;
+    height: 4ch;
+    weight: 20;
+  }
+  select,
+  input {
+    width: 300;
+  }
+  input {
+    background-color: rgb(228, 240, 120);
+  }

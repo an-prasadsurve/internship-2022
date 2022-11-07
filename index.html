@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <form>
+            <h2>Weight Converter</h2>
+            <table>
+                <tr>
+                    <th align="left">From:</th>
+                </tr>
+                <tr>
+                  <td>  <select id="fw">
+                        <option value="kg">Kilogram</option>
+                        <option value="p">Pound</option>
+                        
+                    </select>
+                </td>
+                </tr>
+                
+                <tr>
+                    <th align="left">To:</th>
+                </tr>
+                <td >
+                    <select id="tw">
+                        <option value="pound">Pound</option>
+                        <option value="kilogram">Kilogram</option>
+
+                   </select>
+                </td>
+                </tr>
+                <tr>
+                    <th align="left">Value:</th>
+                </tr>
+                <tr>
+                    <td >
+                        <input type="text" id="v">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <button type="button" onclick="Convert()">Convert</button>
+                    </td>
+                </tr>
+
+            </table>
+           <p>
+                <br>
+               &nbsp&nbspConverted Value (<span id="type"></span>) : <span id="Result"></span>
+               <br>
+               <br>
+                
+                
+            </p> 
+        </form>
+        <script src="script.js"></script>
+    </body>
+
+</html>

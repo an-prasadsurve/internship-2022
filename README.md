@@ -1,2 +1,2 @@
 # internship-2022
-https://stackblitz.com/edit/web-platform-2j5vst?embed=1&file=script.js
+https://stackblitz.com/edit/web-platform-yycxvu?embed=1&file=index.html
