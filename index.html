@@ -1,0 +1,27 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id=outer>
+<div class='ac b'>Time Deposit Calculator</div>
+<div id=cover>
+<form name=mvc>
+<div id=tdr>
+<table class=main>
+<col class=w50><col class=w50>
+<tr><td>Principal<td><input id=principal><tr>
+<td>Interest Rate<td><input id=rate><tr>
+<td>Interest Compounding<td><select id=ci><option value=12>Monthly<option value=4 selected>Quarterly<option value=2>Half-yearly<option value=1>Yearly</select><tr>
+<td>Period (months)<td><input id=time><tr>
+<td><button type=reset>Reset</button>
+<td><button type="button" onclick="maturity()">Submit</button>
+<tr><td>Maturity Value<td><input id=mv>
+</table>
+</div>
+</form>
+</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
