@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Expense</title>
+ 
+   <link rel="stylesheet" href="./Crud.css">
+
+</head>
+
+<body>
+
+    
+<div class="flex-container">
+  
+<div class="flex-child magenta">
+<table class="table">
+  
+<tr class="table-row">
+        <td>
+      
+<form onsubmit="event.preventDefault(); onFormSubmit();" >
+  
+<div class="container">
+     
+<p id="p1">Add a new item</p>
+   
+ <hr>
+            
+	
+																	
+
+<div class="col-md-6">
+												
+<div class="form-group">
+																						<label  id="label" class="col-md-3"><b>Type : </b></label>
+																						<div class="col-md-9">
+																							<select name="gender" id="payResgender"
+																								class="col-md-12 full-width-fix form-control">
+																								<option  value="Card">Card</option>
+																								<option  value="Cash">Cash</option>
+																							</select> <span class="error-span"></span>
+																						</div>
+																					</div>
+																				</div>
+                    <label id="label" for="Name"><b>Name : </b></label>
+                    <input type="text" placeholder="What did you spend on?" name="name" id="name" required >
+            
+                    <label id="label" for="Date"><b>Date : </b></label>
+                    <input type="Date" placeholder="mm/dd/yyyy" name="Date" id="Date" required >
+            
+                    <label id="label" for="Amount"><b>Amount : </b></label>
+    
+<input type="number" name="Amount" id="Amount" placeholder="How much?" required>
+           
+ <hr>
+            
+             
+ <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+          
+ <button type="submit" name="submit"class="registerbtn">Add a new expense</button>
+            
+ </div>
+    
+ </form>
+      
+ </td>
+       
+
+   
+ </tr>
+  
+ 
+</table>
+</div>
+<div class="flex-child green">
+
+ <td>
+      
+ <table  id="empList">
+        
+ <h1 id="record">Record</h1>
+             
+ <thead id="tab_head">
+           
+ <tr>
+              
+ <th>Type</th>
+  
+ <th>Name</th>
+     
+ <th>Date</th>
+           
+ <th>Amount</th>
+               
+ </tr>
+      
+ </thead>
+    
+ <tbody id="tab_body">
+
+  
+ </tbody>
+        
+ </table>
+
+<span id="label" class="d-flex justify-content-center"
+>
+<b>Total: </b>
+<input type="number1" id="total" value="0" disabled text-align="right-side"
+/>
+</span>
+     
+</td>
+   
+     </div>
+</div>
+  
+  <script src="./Crud.js"></script>
+</body>
+</html>
+
