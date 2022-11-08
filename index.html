@@ -1,0 +1,214 @@
+<nav id="navbar">
+<header>JS Documentation</header>
+<ul>
+  <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+  <li>
+    <a class="nav-link" href="#What_you_should_already_know"
+      >What you should already know</a
+    >
+  </li>
+  <li>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+  </li>
+  <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+  <li><a class="nav-link" href="#Variables">Variables</a></li>
+  <li>
+    <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+  </li>
+  <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+</ul>
+</nav>
+<main id="main-doc">
+<section class="main-section" id="Introduction:">
+  <header>Introduction</header>
+  <article>
+    <p>
+      JavaScript is a cross-platform, object-oriented scripting language. It
+      is a small and lightweight language. Inside a host environment (for
+      example, a web browser), JavaScript can be connected to the objects of
+      its environment to provide programmatic control over them.
+    </p>
+
+    <p>
+      JavaScript contains a standard library of objects, such as Array, Date,
+      and Math, and a core set of language elements such as operators, control
+      structures, and statements. Core JavaScript can be extended for a
+      variety of purposes by supplementing it with additional objects; for
+      example:
+    </p>
+    </article>
+</section>
+<section class="main-section" id="What_you_should_already_know?">
+  <header>What you should already know</header>
+  <article>
+    <p>This guide assumes you have the following basic background:</p>
+
+    <ul>
+      <li>
+        You have good knowlwge of HTML.
+      </li>
+      <li>
+        You have good knowledge of CSS.
+      </li>
+      <li>
+        You have atleast basic knowledge of JavaScript.
+      </li>
+    </ul>
+  </article>
+</section>
+<section class="main-section" id="JavaScript_and_Java">
+  <header>JavaScript and Java:</header>
+  <article>
+    <p>
+      JavaScript: 
+         JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
+    </p>
+
+    <p>
+      Java:
+      Java is a popular programming language, created in 1995.
+
+      It is owned by Oracle, and more than 3 billion devices run Java.
+      
+      It is used for:
+      
+      Mobile applications (specially Android apps)
+      Desktop applications
+      Web applications
+      Web servers and application servers
+      Games
+      Database connection
+      And much, much more!
+    </p>
+  </article>
+</section>
+<section class="main-section" id="Hello_world">
+  <header>Hello world:</header>
+  <article>
+  A "Hello, World!" is a simple program that prints Hello, World! on the screen. Since it's a very simple program, this program is often used to introduce a new programming language to beginners.
+    <code
+    >function greetMe(yourName) 
+    { alert("Hello " + yourName); }
+    greetMe("World");
+    </code>
+  </article>
+</section>
+<section class="main-section" id="Variables">
+  <header>Variables</header>
+  <p>
+    You use variables as symbolic names for values in your application. The
+    names of variables, called identifiers, conform to certain rules.
+    Variables are containers for storing data (storing data values).
+  </p>
+</section>
+<section class="main-section" id="Declaring_variables">
+  <header>Declaring variables:</header>
+  <article>
+    <p>
+    How do you declare a variable in JavaScript?
+    Always declare JavaScript variables with var , let , or const . The var keyword is used in all JavaScript code from 1995 to 2015. The let and const keywords were added to JavaScript in 2015. If you want your code to run in older browsers, you must use var .With the keyword var. 
+    </p>
+  </article>
+</section>
+<section class="main-section" id="Variable_scope">
+  <header>Variable scope:</header>
+  <article>
+    <p>
+    Scope determines the accessibility (visibility) of variables.
+
+    JavaScript has 3 types of scope:
+    
+    Block scope
+    Function scope
+    Global scope
+    Block Scope
+    Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+    
+    ES6 introduced two important new JavaScript keywords: let and const.
+    
+    These two keywords provide Block Scope in JavaScript.
+    
+    Variables declared inside a { } block cannot be accessed from outside the block:
+    
+    Example
+    {
+      let x = 2;
+    }
+    // x can NOT be used here
+    Variables declared with the var keyword can NOT have block scope.
+    
+    Variables declared inside a { } block can be accessed from outside the block.
+    
+    Example
+    {
+      var x = 2;
+    }
+    // x CAN be used here
+    Local Scope
+    Variables declared within a JavaScript function, become LOCAL to the function.
+    
+    Example
+    // code here can NOT use carName
+    
+    function myFunction() {
+      let carName = "Volvo";
+      // code here CAN use carName
+    }
+    
+    // code here can NOT use carName
+    Local variables have Function Scope:
+    
+    They can only be accessed from within the function.
+    
+    Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+    
+    Local variables are created when a function starts, and deleted when the function is completed.
+    
+    Function Scope
+    JavaScript has function scope: Each function creates a new scope.
+    
+    Variables defined inside a function are not accessible (visible) from outside the function.
+    
+    Variables declared with var, let and const are quite similar when declared inside a function.
+    
+    They all have Function Scope:
+    
+    function myFunction() {
+      var carName = "Volvo";   // Function Scope
+    }
+    function myFunction() {
+      let carName = "Volvo";   // Function Scope
+    }
+    function myFunction() {
+      const carName = "Volvo";   // Function Scope
+    }
+    Global JavaScript Variables
+    A variable declared outside a function, becomes GLOBAL.
+    
+    Example
+    let carName = "Volvo";
+    // code here can use carName
+    
+    function myFunction() {
+    // code here can also use carName
+    }
+    A global variable has Global Scope:
+    
+    All scripts and functions on a web page can access it. 
+    
+    Global Scope
+    Variables declared Globally (outside any function) have Global Scope.
+    
+    Global variables can be accessed from anywhere in a JavaScript program.
+    
+    Variables declared with var, let and const are quite similar when declared outside a block.
+    
+    They all have Global Scope:
+    
+    var x = 2;       // Global scope
+    let x = 2;       // Global scope
+    const x = 2;       // Global scope
+   </p>
+  </article>
+</section>
+</main>
