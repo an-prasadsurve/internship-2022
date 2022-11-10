@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>ANQP Assignment</title> 
+	</head>
+	<body>
+	<center> Welcome To ANQP Assignment Web Page</center><br><br>
+		
+		<div class="container" align="center">
+		<input type="button" onclick="display()" value="Display Result">
+		</div>
+
+			
+	 <script language="javascript" type="text/javascript" >
+			var string= prompt("Enter string of Words: ", " Enter word/s here");
+			var result = string.split(" ").
+			map(function(word, i)
+			{
+  				return i%2 == 0 ? word:word.split("").reverse().join("");
+  			}
+  				).join(" ");
+  				 
+  		function display(){
+  		document.write(result);
+  		}				
+	</script>
+	<br>
+		<center> Developed and Maintained by Yogesh Mankar</center> 
+	</body>
+</html>
