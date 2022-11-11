@@ -1,8 +1,9 @@
 # internship-2022
 
 
-## DEMO 
-https://stackblitz.com/edit/web-platform-uc7bjf?file=styles.css
+## This is me Shamal Shinde
 
-##
+### from kkwagh college
+
+# DEMO
 https://web-platform-uc7bjf.stackblitz.io
