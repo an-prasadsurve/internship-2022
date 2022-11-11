@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weight Convertor</title>
+    <style>
+        #first
+        {
+            width:90%;
+            max-width:600px;
+            background:#fff;
+            margin:0 auto
+        }
+        .title
+        {
+            font-weight:bold;
+            font-size: 30px ;
+			margin: 15px 0;
+        }
+		label{
+			font-size:20px;
+		}
+		select{
+			width: 60%;
+			padding:7px;
+			margin: 10px 0;
+		}
+		input{
+			width:57%;
+			padding: 7px;
+			margin: 10px 0;
+		}
+		button{
+			padding: 12px 20px;
+			background-color: rgb(6, 142, 142);
+			color: white;
+			border: none;
+		}
+		#re{
+			background-color: rgb(195, 193, 193);
+			color: green;
+			width: 100%;
+			padding: 20px;
+		}
+    </style>
+    <script>
+        function convert(){
+	var x=document.getElementById('wt1').value;
+	var y=document.getElementById('wt2').value;
+	var z=document.getElementById('val1').value;
+	if(x=="kg" && y=="kg"){
+		document.getElementById('re').innerHTML="Converted Value(Kilograms):"+z;
+	}
+	else if(x=="kg" && y=="gm"){
+		document.getElementById('re').innerHTML="Converted Value(Grams):"+(z*1000).toFixed(4);
+	}
+	else if(x=="kg" && y=="lb"){
+		document.getElementById('re').innerHTML="Converted Value(Pounds):"+(z*2.2046).toFixed(4);
+	}
+	else if(x=="kg" && y=="ou"){
+		document.getElementById('re').innerHTML="Converted Value(Ounces):"+(z*35.274).toFixed(4);
+	}
+	else if(x=="kg" && y=="st"){
+		document.getElementById('re').innerHTML="Converted Value(Stones):"+(z*0.1574).toFixed(4);
+	}
+	else if(x=="gm" && y=="gm"){
+		document.getElementById('re').innerHTML="Converted Value(Grams):"+z;
+	}
+	else if(x=="gm" && y=="kg"){
+		document.getElementById('re').innerHTML="Converted Value(Kilograms):"+(z/1000).toFixed(4);
+	}
+	else if(x=="gm" && y=="lb"){
+		document.getElementById('re').innerHTML="Converted Value(Pounds):"+(z*0.0022046).toFixed(4);
+	}
+	else if(x=="gm" && y=="ou"){
+		document.getElementById('re').innerHTML="Converted Value(Ounces):"+(z*0.035274).toFixed(4);
+	}
+	else if(x=="gm" && y=="st"){
+		document.getElementById('re').innerHTML="Converted Value(Stones):"+(z*0.00015747).toFixed(4);
+	}
+	else if(x=="lb" && y=="lb"){
+		document.getElementById('re').innerHTML="Converted Value(Pounds):"+z;
+	}
+	else if(x=="lb" && y=="gm"){
+		document.getElementById('re').innerHTML="Converted Value(Grams):"+(z/0.0022046).toFixed(4);
+	}
+	else if(x=="lb" && y=="kg"){
+		document.getElementById('re').innerHTML="Converted Value(Kilograms):"+(z/2.2046).toFixed(4);
+	}
+	else if(x=="lb" && y=="ou"){
+		document.getElementById('re').innerHTML="Converted Value(Ounces):"+(z*16).toFixed(4);
+	}
+	else if(x=="lb" && y=="st"){
+		document.getElementById('re').innerHTML="Converted Value(Stones):"+(z*0.071429).toFixed(4);
+	}
+	else if(x=="ou" && y=="ou"){
+		document.getElementById('re').innerHTML="Converted Value(Ounces):"+z;
+	}
+	else if(x=="ou" && y=="gm"){
+		document.getElementById('re').innerHTML="Converted Value(Grams):"+(z/0.035274).toFixed(4);
+	}
+	else if(x=="ou" && y=="kg"){
+		document.getElementById('re').innerHTML="Converted Value(Kilograms):"+(z/35.274).toFixed(4);
+	}
+	else if(x=="ou" && y=="lb"){
+		document.getElementById('re').innerHTML="Converted Value(Pounds):"+(z*0.0625).toFixed(4);	
+	}
+	else if(x=="ou" && y=="st"){
+		document.getElementById('re').innerHTML="Converted Value(Stones):"+(z*0.0044643).toFixed(4);	
+	}
+	else if(x=="st" && y=="st"){
+		document.getElementById('re').innerHTML="Converted Value(Stones):"+z;
+	}
+	else if(x=="st" && y=="gm"){
+		document.getElementById('re').innerHTML="Converted Value(Grams):"+(z/0.00015747).toFixed(4);
+	}
+	else if(x=="st" && y=="kg"){
+		document.getElementById('re').innerHTML="Converted Value(Kilograms):"+(z/0.15747).toFixed(4);
+	}
+	else if(x=="st" && y=="lb"){
+		document.getElementById('re').innerHTML="Converted Value(Pounds):"+(z*14).toFixed(4);	
+	}
+	else if(x=="st" && y=="ou"){
+		document.getElementById('re').innerHTML="Converted Value(Ounces):"+(z*224).toFixed(4);	
+	}
+	}
+    </script>
+</head>
+<body>
+    <div id="first">
+        <div class="title">
+            Weight Converter
+        </div>
+        <form>
+	<label>From:</label>
+	<br>
+	<select id="wt1">
+                                <option value="kg">Kilograms</option>
+                                <option value="gm">Grams</option>
+                                <option value="lb">Pounds</option>
+                                <option value="ou">Ounces</option>
+								<option value="st">Stones</option>
+    </select>
+	<br>
+	<label>To:</label>
+	<br>
+	<select id="wt2">
+                                <option value="kg">Kilograms</option>
+                                <option value="gm">Grams</option>
+                                <option value="lb">Pounds</option>
+                                <option value="ou">Ounces</option>
+								<option value="st">Stones</option>
+                </select>
+	<br>
+	<label>Value:</label>
+	<br>
+	<input id="val1">
+	<br>
+	<button type="button" onclick=convert()>Convert</button>
+	<br>
+	<h4 id="re"></h4>
+        </form>
+    </div>
+</body>
+</html>
