@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time Deposite Calculator</title>
+    <style>
+        #first
+        {
+            width:90%;
+            max-width:600px;
+            background:#fff;
+            margin:0 auto
+        }
+        #box
+        {
+            border:2px solid #111 ;
+            padding:15px 0;
+            border-radius:10px;
+        }
+        .main
+        {   
+            font-size: 18px;
+            table-layout:fixed;
+            width:94%;
+            border:0;
+            border-collapse:collapse;
+            margin:0 auto
+        }
+        .main td
+        {   
+            padding:0 8px;
+            vertical-align:middle;
+            border:0
+        }
+        .main input
+        {
+            width:100%;
+            border:1px solid #ccc;
+            margin:2px 0;
+            padding:3px;
+            height:22px;
+            text-align:right
+        }
+        .title
+        {
+            text-align:center;
+            font-weight:bold;
+            font-size: 25px ;
+        }
+        .main select
+        {
+            width:100%;
+            border:1px solid #ccc;
+            margin:2px 0;
+            background:#fff;
+            height:22px;    
+        }
+        .main button
+        {
+            width:100%;
+            font-weight:bold;
+            margin:3px 0;
+            padding: 5px 0;
+        }
+    </style>
+    <script>
+        function maturity()
+        {
+            var principal=document.getElementById('principal').value;
+            var rate=document.getElementById('rate').value;
+            var ci=document.getElementById('ci').value;
+            var time=document.getElementById('time').value;
+            var irate=rate/ci;var mv=document.getElementById('mv').value;
+            document.getElementById('mv').value=(document.getElementById('principal').value*Math.pow((1 + irate/100),(time/12*ci))).toFixed(2)
+        }
+    </script>
+</head>
+<body>
+    <div id="first">
+        <div class="title">
+            Time Deposit Calculator
+        </div>
+        <div id="box">
+            <form>
+            <div>
+                <table class="main">
+                    <tr>
+                        <td>Principal</td>
+                        <td><input id="principal"></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate</td>
+                        <td><input id="rate"></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Compounding</td>
+                        <td><select id="ci">
+                                <option value=12>Monthly
+                                <option value=4 selected>Quarterly
+                                <option value=2>Half-yearly
+                                <option value=1>Yearly
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period (months)</td>
+                        <td><input id="time"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="reset">Reset</button></td>
+                        <td><button type="button" onclick=maturity();>Submit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Maturity Value</td>
+                        <td><input id="mv"></td>
+                    </tr>
+                </table>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
