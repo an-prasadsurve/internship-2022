@@ -1,7 +1,6 @@
 # internship-2022
 
-https://web-platform-hucbbv.stackblitz.io
-
+https://web-platform-tfsah3.stackblitz.io/
 
 
 
