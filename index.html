@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    
+    <title>Document</title>
+    <style>
+      .name {
+        margin-left: 40px;
+        margin-top: -47px;
+        font-size: 18px;
+        height: 30px;
+      }
+      #name1 {
+        margin-left: 230px;
+        font-size: 25px;
+      }
+
+      #type {
+        margin-left: -380px;
+        font-size: 25px;
+      }
+      .type {
+        font-size: 18px;
+        height: 30px;
+
+        margin-left: 20px;
+      }
+      #date {
+        margin-left: -520px;
+        font-size: 25px;
+      }
+
+      .date {
+        margin-right: -30px;
+        margin-left: 29px;
+        font-size: 21px;
+        height: 30px;
+        margin-top: 20px;
+      }
+      #amount {
+        margin-left: 280px;
+        font-size: 25px;
+      }
+      .amount1 {
+        margin-left: 29px;
+        font-size: 18px;
+        height: 30px;
+        margin-top: -21px;
+      }
+      .add {
+        background-color: rgb(13, 180, 13);
+        font-size: 21px;
+        margin-top: 37px;
+        height: 40px;
+        margin-right: 20px;
+        text-align: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+      }
+      .table1 {
+        margin-top: 150px;
+        margin-left: 600px;
+        width: 650px;
+        height: 30px;
+      }
+      table {
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        border-spacing: 0;
+        box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+      }
+      td,
+      th {
+        padding: 15px 20px;
+        text-align: center;
+        color: black;
+      }
+      th {
+        background-color: grey;
+        color: #fafafa;
+        font-family: "Open Sans", Sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+      }
+      tr {
+        width: 100%;
+        background-color: #fafafa;
+        font-family: "Montserrat", sans-serif;
+      }
+      tr:nth-child(even) {
+        background-color: #eeeeee;
+      }
+      tr .a {
+        color: rgb(15, 2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1>Add a new item:</h1>
+        <div class="expense">
+          <label id="type">Type:</label>
+          <select class="type" id="expense-type">
+            <option selected>Open this select menu</option>
+            <option value="1">card</option>
+            <option value="2">cash</option>
+          </select>
+        </div>
+        <div class="name">
+          <label id="name1">Name:</label>
+          <input
+            type="text"
+            class="name"
+            id="expense-name"
+            placeholder="What did you spend on?"
+          />
+        </div>
+        <div class="date">
+          <label id="date">Date:</label>
+          <input type="date" class="date" id="expense-date" />
+        </div>
+
+        <div class="amount">
+          <label id="amount">Amount:</label>
+          <input type="text" class="amount1" id="expense-amount" />
+        </div>
+        <div>
+          <button type="button" placeholder="Add a new expense" class="add" onclick="addExpense()">Add a new expense</button>
+        </div>
+        <div class="table1">
+          <table>
+            <thead>
+                <tr>
+                  <th>type</th>
+                  <th>name</th>
+                  <th>date</th>
+                  <th>amount</th>
+                </tr>
+            </thead>
+
+            <tbody id="table-content">
+
+            </tbody>
+            <!-- <tr>
+              <td>Card</td>
+
+              <td>Online Shopping</td>
+
+              <td>09/01/2019</td>
+
+              <td>$1000</td>
+            </tr>
+
+            <tr>
+              <td>Cash</td>
+
+              <td>Gocery</td>
+
+              <td>09/01/2019</td>
+
+              <td>$500</td>
+            </tr>
+
+            <tr>
+              <td></td>
+
+              <td></td>
+
+              <td class="a">Total</td>
+
+              <td class="b">$1500</td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

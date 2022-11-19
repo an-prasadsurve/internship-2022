@@ -1,0 +1,31 @@
+.container {
+    background-color: black;
+    opacity:0.7;
+    color: white;
+    text-align: center;
+    font-family:Arial;
+    width:1200px;
+    height:1000px
+}
+
+.expense {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin:8px; */
+    padding:20px;
+    font-size:25px;
+}
+
+  
+
+
+#addexpensebtn {
+    padding:10px;
+    background-color: green;
+    border-style: none;
+    color:white;
+    margin-top:15px;
+    font-size:15px;
+    cursor: pointer;
+}
