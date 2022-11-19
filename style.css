@@ -1,0 +1,40 @@
+body
+    {
+     position: absolute;
+     top: 15px;
+     left: 145px;
+     padding: 35px;
+     width: 850px;
+     height: 750px;
+    }
+
+#tbl1,#tbl2
+    {
+    border-collapse:collapse;
+    font-size:20;
+    }
+
+.stud
+    {
+    position:absolute;
+    left:35px;
+    top:380px;
+    font-size:18;
+    font-family:Arial;
+    margin-top:45px;
+    border-collapse:collapse;
+    font-weight: bold;
+    }
+
+#studname
+    {
+    font-size:15px
+    }
+
+.btn
+    {
+    position:absolute;
+    top:355px;
+    left:720px;
+    font-size: 16;
+    }

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="E:\Khushal Bodre\style.css">
+    <script src="E:\Khushal Bodre\script.js"></script>
+</head>
+<BODY>
+<DIV>
+<H1 align="center"style="font-family:cambria;font-size:40";><U>STUDENT MARKSHEET</H1>
+<FIELDSET>
+<LEGEND> STUDENT INFORMATION </LEGEND>
+<TABLE align="center" id="tbl1">
+<FORM name="form1">
+</TR>
+<TD width="140">Name :</TD> <TD><INPUT type="text" name="txtname"/></TD>
+<TD> &nbsp; &nbsp;Father Name :</TD><TD> <INPUT type="text" name="txtfname"/></TD>
+</TR>
+
+<TR>
+<TD width="140" > Institute Name :</TD><TD> <INPUT type="text" name="txtins"/></TD>
+<TD style="text-indent:16px">Batch :</TD><TD> <INPUT type="text" name="txtbatch"/></TD>
+</TR>
+</TABLE>
+</FIELDSET></BR>
+<FIELDSET>
+<LEGEND> SUBJECTS MARKS </LEGEND>
+<TABLE id="tbl2">
+<TR>
+<TD> Office Automation :</TD><TD> <INPUT type="text" name="txtoffice" maxlength="3" size="10"/> Out of 100 </TD>
+
+</TR>
+<TR>
+<TD> Web Designing :</TD><TD>  <INPUT type="text" name="txtweb" maxlength="3" size="10"/> Out of 100</TD>
+</TR>
+<TR>
+<TD> IT :</TD><TD> <INPUT type="text" name="txtit" maxlength="3" size="10"/> Out of 100</TD>
+</TR>
+<TR>
+<TD> C# Programing :</TD><TD> <INPUT type="text" name="txtc" maxlength="3" size="10" /> Out of 100</TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</FIELDSET>
+<DIV class="btn">
+<button type="button" onclick='myFun()'>Submit</button>
+<button type="Reset">Reset</button>
+</DIV>
+<DIV class="stud">
+  <TABLE border="1">
+<TR>
+<TH colspan="8" width="240"> Student Information </TH>
+</TR>
+<TR>
+<TD width="135">Name :</TD><TD><FONT face="arial" id="studname"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Father Name :</TD><TD><FONT face="arial" id="studfname"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Institute Name :</TD><TD><FONT face="arial" id="studins"></FONT></TD>
+</TR>
+<TD width="135">Batch :</TD> <TD><FONT face="arial" id="studbatch"></FONT></TD>
+</TR>
+<TR>
+<TH colspan="8" width="240"> Subjects Marks </TH>
+</TR>
+<TR>
+<TD width="135">Office Automation :</TD> <TD><FONT face="arial" id="studoffice"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Web Designing :</TD><TD><FONT face="arial" id="studweb"></FONT></TD>
+</TR>
+<TD width="135">IT :</TD><TD><FONT face="arial" id="studit"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">C# Programing :</TD><TD><FONT face="arial" id="studc"></FONT></TD>
+</TR>
+<TR>
+<TH colspan="8" width="240"> Marks Result </TH>
+</TR>
+<TR>
+<TD width="135">TOTAL :</TD><TD> <FONT face="arial" id="studtotal"></FONT></TT></TD>
+</TR>
+<TR>
+<TD width="135">Percentage :</TD><TD><FONT face="arial" id="studper"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Grade :</TD><TD><FONT face="arial" id="studgrade"></FONT></TD>
+</TR>
+</TABLE>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>
