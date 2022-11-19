@@ -1,21 +1,22 @@
 
 #outer {
-    width: 90%;
-    max-width: 600px;
+    width: 50%;
+    min-height: 100%;
     background: #fff;
-    margin: 600px auto
+    margin:  auto;
 }
 
-#cover {
-    border: 2px solid #111;
+/* #cover {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+} */
+
+#form{
+    border:2px solid black;
     border-radius: 25px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 280px;
-    width: 300px;
-    height: 170px;
-}
 
+}
 .main {
     table-layout: fixed;
     width: 94%;
