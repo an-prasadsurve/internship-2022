@@ -1,6 +1,6 @@
 # internship-2022
 
-https://web-platform-revdmj.stackblitz.io
+https://web-platform-pe4gly.stackblitz.io/
 
 
 
