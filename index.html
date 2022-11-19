@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Employee Form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                  <h4>Add Employee Details</h4>
+                    <div>
+                        <label>Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age" placeholder="Your Age">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary" placeholder="Your Salary">
+                    </div>
+                    <div>
+                        <label>Mobile Number</label>
+                        <input type="text" name="mobno" id="mobno" placeholder="Your Mobile Number">
+                    </div>
+                    <div>
+                    <label>Department</label>
+                    <input type="text" name="dept" id="dept" placeholder="Your Department">
+                </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br>
+    
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Salary</th>
+                            <th>Mobile Number</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
