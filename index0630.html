@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</head>
+<style>
+  table, th, td {
+    border:1px solid black;
+  }
+  
+  </style>
+
+<body>
+<h1> Music Genres</h1>
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(17, 133, 236);color:white;">
+                    Country Music
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Country</strong> 
+                  <br>
+                  <table style="width:100%" rules="rows">
+                    <tr>
+                      <th>Song Name</th>
+                      <th>Artist</th>
+                      <th>Album</th>
+                      <th>Year</th>
+                    </tr>
+                    <tr>
+                      <td>Brand New Man</td>
+                      <td>  Brooks & Dunn</td>
+                      <td>  Brand New Man</td>
+                      <td>  1991</td>
+                    </tr>
+                    <tr>
+                      <td>Neon</td>
+                      <td>  Chris Young</td>
+                      <td>  Neon (Deluxe edition)</td>
+                      <td>  2011</td>
+                    </tr>
+                    <tr>
+                      <td>19 You + Me</td>
+                      <td>  Dan + Shay</td>
+                      <td>  19 You + Me (Single)</td>
+                      <td>  2013</td>
+                  </tr>
+                  <tr>
+                    <td>Alright</td>
+                    <td>  Darius Rucker</td>
+                    <td>  Learn to Live</td>
+                    <td>  2008</td>
+                </tr>
+
+
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" 
+                style="background-color:rgb(17, 133, 236);color:white;">
+                  Rock Music
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="background-color:rgb(17, 133, 236);color:white;">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                style="background-color:rgb(17, 133, 236);color:white;">
+                  Jazz Music
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
