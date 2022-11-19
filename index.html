@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <head>
+        <h3>Weight Converter</h3>
+      </head>
+
+      <label>From:</label>
+      <br />
+      <select
+        id="from"
+        class="form-select form-select-lg mb-3"
+        aria-label=".form-select-lg example"
+      >
+        <option selected></option>
+        <option value="1">Kilogram</option>
+        <option value="2">Pounds</option>
+        <option value="3">Gram</option>
+        <option value="4">Ounces</option>
+        <option value="5">Stones</option>
+      </select>
+      <br />
+      <label>To:</label>
+      <br />
+      <select
+        id="to"
+        class="form-select form-select-lg mb-3"
+        aria-label=".form-select-lg example"
+      >
+        <option selected></option>
+        <option value="1">Kilogram</option>
+        <option value="2">Pounds</option>
+        <option value="3">Gram</option>
+        <option value="4">Ounces</option>
+        <option value="5">Stones</option>
+      </select>
+      <br />
+      <label>Value:</label>
+      <br />
+      <input type="text" id="value-to-convert" name="input" />
+      <br />
+      <button type="button" class="btn btn-primary" onclick="convertValue()">
+        Convert
+      </button>
+    </div>
+    <h3 id="ans"></h3>
+    <script src="script.js"></script>
+  </body>
+</html>
