@@ -1,7 +1,8 @@
 # internship-2022
 
 
-https://web-platform-pe4gly.stackblitz.io
+https://stackblitz.com/edit/web-platform-tqhd64?file=index.html
+https://web-platform-tqhd64.stackblitz.io
 
 
 
