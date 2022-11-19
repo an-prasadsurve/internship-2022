@@ -1,5 +1,5 @@
 # internship-2022
-Editor url
+Editor url:
 https://stackblitz.com/edit/web-platform-pzxamp?file=index.html
 
 Application url:
