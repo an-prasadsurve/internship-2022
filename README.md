@@ -1,8 +1,10 @@
 # internship-2022
 
-https://web-platform-adja8b.stackblitz.io
+Editor url
+https://stackblitz.com/edit/web-platform-3lcg3u?file=index.html
 
 
+Application url
 
-
+https://web-platform-3lcg3u.stackblitz.io
 
