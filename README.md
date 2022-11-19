@@ -1,6 +1,9 @@
 # internship-2022
+Editor url
+https://stackblitz.com/edit/web-platform-pzxamp?file=index.html
 
-https://web-platform-tfsah3.stackblitz.io/
+Application url:
+https://web-platform-pzxamp.stackblitz.io
 
 
 
