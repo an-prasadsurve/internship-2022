@@ -1,0 +1,58 @@
+.container{
+    background-color: #efeeee;
+    padding: 20px;
+}
+
+label{
+    padding-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    height:30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.btn{
+    background-color: #5bb700;
+    color: #ffffff;
+    height: 40px;
+    border: none;
+    font-size: 17px;
+}
+
+.tHEader{
+    font-size: 17px;
+    background-color: #5bb700;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+table{
+    margin: 0 auto;
+}
+.formLable{
+    padding-bottom: 10px;
+}
+
+th{
+    
+    width: 200px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+    
+}
