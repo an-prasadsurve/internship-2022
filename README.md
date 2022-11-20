@@ -1,6 +1,8 @@
 # internship-2022
 
-https://web-platform-zl6a1c.stackblitz.io
+editor URL:https://stackblitz.com/edit/web-platform-t6dosp?file=index.html
+
+Application URL:https://web-platform-t6dosp.stackblitz.io
 
 
 
