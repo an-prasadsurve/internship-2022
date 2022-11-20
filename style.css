@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: cyan;
+    padding: 2% 15%;
+}
+
+#tablearea {
+    margin: 5%;
+}
+
+th, td {
+    padding: 2%;
+}
