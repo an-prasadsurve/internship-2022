@@ -1,6 +1,10 @@
 # internship-2022
+Editor URL: https://stackblitz.com/edit/web-platform-naw8fv?file=index.html
 
-https://web-platform-zl6a1c.stackblitz.io
+
+
+Application URL:https://web-platform-naw8fv.stackblitz.io
+
 
 
 
