@@ -1,12 +1,8 @@
-# internship-2022
-
-https://web-platform-zl6a1c.stackblitz.io
-
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
+question:create time(fixed) Deposit calculator using HTML, CSS and JavaScript.
 
 
+https://stackblitz.com/edit/web-platform-je5txi?file=index.html
 
-
-
+https://web-platform-je5txi.stackblitz.io
 
 
