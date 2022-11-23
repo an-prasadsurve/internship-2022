@@ -1,12 +1,4 @@
-# internship-2022
+Q.Create Student MarkSheet using the HTML, CSS and JavaScript.
 
-https://web-platform-zl6a1c.stackblitz.io
-
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
-
-
-
-
+https://stackblitz.com/edit/web-platform-eyulmz?file=index.html
+https://web-platform-eyulmz.stackblitz.io

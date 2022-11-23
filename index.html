@@ -1,89 +1,190 @@
-<!Doctypes>
-<html>
-     <head><title>Banking Web Application</title>
- 	<style>
-	 .button {
-	background-color: #008CBA;
-	border : none;
-	color: white;
-	font-size: 12px;
-	text-align: center; 
-	cursor: pointer;
-	}
-	.button {background-color: #008CBA;}
-	</style> 
-     </head>
 
-     <body>
-      <h1> Welcome to simple Bank where we can make Banking Simple! </h1>
-	<script>
-	function display(){
-	var name = document.getElementById("name").value;
-	document.getElementById("print1").innerHTML = name;
- 
-            if(document.getElementById('Saving').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Saving").value;
-            } 
-            else if(document.getElementById('Current').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Current").value ;   
-            }   
-	var name = document.getElementById("Amount").value;
-	document.getElementById("print2").innerHTML = Amount;
+
+<HTML>
+<HEAD>
+<STYLE>
+body
+{
+ border-radius: 20px;
+ border-style: double;
+ border-color: blue;
+ position: absolute;
+ width: 850px;
+ height: 705px;
+ top: 15px;
+ left: 45px;
+ padding: 30px 30px 50px 30px;
+ background-color: #CCC;
 }
-</script>  
+#tbl,#tbl2
+{
+border-collapse:collapse;
+font-size:18;
+font-family:Century Gothic;
+}
+.demo
+{
+position:absolute;
+left:35px;
+top:380px;
+font-size:17;
+font-family:Arial;
+font-weight:bold;
+margin-top:35px;
+border-collapse:collapse;
+}
+#demoname
+{
+font-size:15px
+}
+.btn
+{
+position:absolute;
+top:355px;
+left:720px;
+}
+</STYLE>
 
-	<form> 
-	<fieldset> <legend>Account Information</legend>
-	<table>
-	<tr><td>   <label for="name">Enter name: </label></td>
-	<td> <input type="text" id="name"></td></tr> 
+<SCRIPT>
+function myFun()
+{
+var a=document.form1.txtname.value;
+document.getElementById("demoname").innerHTML=a;
+var b=document.form1.txtfname.value;
+document.getElementById("demofname").innerHTML=b;
+var c=document.form1.txtins.value;
+document.getElementById("demoins").innerHTML=c;
+var d=document.form1.txtbatch.value;
+document.getElementById("demobatch").innerHTML=d;
+var e=document.form1.txtoffice.value;
+document.getElementById("demooffice").innerHTML=e;
+var f=document.form1.txtweb.value;
+document.getElementById("demoweb").innerHTML=f;
+var g=document.form1.txtit.value;
+document.getElementById("demoit").innerHTML=g;
+var h=document.form1.txtc.value;
+document.getElementById("democ").innerHTML=h;
+var txt1=eval(parseFloat(document.form1.txtoffice.value)+parseFloat(document.form1.txtweb.value)
++parseFloat(document.form1.txtit.value)+parseFloat(document.form1.txtc.value));
+document.getElementById("demototal").innerHTML=txt1;
+var txt2=eval(parseFloat(txt1*100)/400);
+document.getElementById("demoper").innerHTML=txt2.toFixed(2)+"%";
 
-	<tr><td><label for="Accounttype">Account Type:</label> </td> 
-	<td><input type="radio" id="Saving" value="Saving">Saving
-	<input type="radio" id="Current" value="Current">Current<td></tr>
-	</table></fieldset>
+switch(true)
+{
+case(txt2>=80):
+document.getElementById("demograde").innerHTML="A1";
+break;
+case(txt2>=70):
+document.getElementById("demograde").innerHTML="A";
+break;
+case(txt2>=60):
+document.getElementById("demograde").innerHTML="B";
+break;
+case(txt2>=50):
+document.getElementById("demograde").innerHTML="C";
+break;
+case(txt2>=40):
+document.getElementById("demograde").innerHTML="D";
+break;
+case(txt2<40):
+document.getElementById("demograde").innerHTML="Fail";
+break;
+}
 
-	<fieldset>
-	<legend>Transactions</legend>
-	<table>
-	<tr><td>Total Balance: </td>
-	<td style-color:"blue">54000</style></td></tr>
+}
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
 
-	<tr><td>   <label for="Amount">Amount: </label></td>
-	<td> <input type="text" id="Amount"></td></tr> 
+<BODY>
+<DIV class="color">
+<H1 align="center"style="font-family:cambria;font-size:40";><U>STUDENT MARKSHEET</H1>
+<FIELDSET>
+<LEGEND> STUDENT INFORMATION </LEGEND>
+<TABLE align="center" id="tbl">
+<FORM name="form1">
+</TR>
+<TD width="140">Name:</TD> <TD><INPUT type="text" name="txtname"/></TD>
+<TD> &nbsp; &nbsp;Father Name:</TD><TD> <INPUT type="text" name="txtfname"/></TD>
+</TR>
 
-	<tr><td>Select what what you want to do</td>
-	<td> <button class="button button1" onclick="display()">Deposit</button></td>
-	<td> <button class="button button2" onclick="display()">Withdraw</button></td></tr>
+<TR>
+<TD width="140" > Institute Name:</TD><TD> <INPUT type="text" name="txtins"/></TD>
+<TD style="text-indent:16px">Batch:</TD><TD> <INPUT type="text" name="txtbatch"/></TD>
+</TR>
+</TABLE>
+</FIELDSET></BR>
+<FIELDSET>
+<LEGEND> SUBJECTS MARKS </LEGEND>
+<TABLE id="tbl2">
+<TR>
+<TD> Office Automation:</TD><TD> <INPUT type="text" name="txtoffice" maxlength="2" size="10"/> Out of 100 </TD>
 
-	<tr><td> <button class="button button3" onclick="display()">View Transaction</button></td></tr>
-	</table></fieldset>
- 
-	<fieldset><legend>Ttansaction Details</legend>
-	<table>
-	<tr><td> Name: </td>
-	<td><p id="print1"></p></td></tr>
+</TR>
+<TR>
+<TD> Web Designing:</TD><TD>  <INPUT type="text" name="txtweb" maxlength="2" size="10"/> Out of 100</TD>
+</TR>
+<TR>
+<TD> IT:</TD><TD> <INPUT type="text" name="txtit" maxlength="2" size="10"/> Out of 100</TD>
+</TR>
+<TR>
+<TD> C# Programing:</TD><TD> <INPUT type="text" name="txtc" maxlength="2" size="10" /> Out of 100</TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</FIELDSET>
+<DIV class="btn">
+<button style="font-size:17" type="button" onclick='myFun()'>Submit</button>
+<button style="font-size:17" type="Reset">Reset</button>
+</DIV>
+<DIV class="demo">
+  <TABLE border="1">
+<TR>
+<TH colspan="8" width="240"> Student Information </TH>
+</TR>
+<TR>
+<TD width="135">Name:</TD><TD><FONT face="arial" id="demoname"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Father Name:</TD><TD><FONT face="arial" id="demofname"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Institute Name:</TD><TD><FONT face="arial" id="demoins"></FONT></TD>
+</TR>
+<TD width="135">Batch:</TD> <TD><FONT face="arial" id="demobatch"></FONT></TD>
+</TR>
+<TR>
+<TH colspan="8" width="240"> Subjects Marks </TH>
+</TR>
+<TR>
+<TD width="135">Office Automation:</TD> <TD><FONT face="arial" id="demooffice"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Web Designing:</TD><TD><FONT face="arial" id="demoweb"></FONT></TD>
+</TR>
+<TD width="135">IT:</TD><TD><FONT face="arial" id="demoit"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">C# Programing:</TD><TD><FONT face="arial" id="democ"></FONT></TD>
+</TR>
+<TR>
+<TH colspan="8" width="240"> Marks Result </TH>
+</TR>
+<TR>
+<TD width="135">TOTAL:</TD><TD> <FONT face="arial" id="demototal"></FONT></TT></TD>
+</TR>
+<TR>
+<TD width="135">Percentage:</TD><TD><FONT face="arial" id="demoper"></FONT></TD>
+</TR>
+<TR>
+<TD width="135">Grade:</TD><TD><FONT face="arial" id="demograde"></FONT></TD>
+</TR>
+</TABLE>
+</DIV>
+</DIV>
 
-	<tr><td> Account Type: </td>
-	<td><p id="disp" > </p></td></tr>
-
-	<tr><td> Initial Balance: </td>
-	<td>54000</td></tr>
-
-	<table><tr><th> Description: </th>
-	<td><p id="print2"></p></td></tr>
-
-	<tr><th> Amount: </th>
-	<td><p id="print3"></p></td></tr>
-
-	<tr><th> Balance: </th>
-	<td><p id="print4"></p></td></tr>
-  </table>
-
-  </table>
-	</fieldset>
-</form>
-</body>
-</html>
+</BODY>
+</HTML>
