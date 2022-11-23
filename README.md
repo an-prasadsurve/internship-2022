@@ -1,12 +1,5 @@
-# internship-2022
+Create autocomplete form using html,CSS and javascript.
 
-https://web-platform-zl6a1c.stackblitz.io
+https://stackblitz.com/edit/web-platform-sprm2q?file=index.html
 
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
-
-
-
-
+https://web-platform-sprm2q.stackblitz.io
