@@ -1,12 +1,7 @@
-# internship-2022
+Given a string,reverse all the words which have odd length words are not changed using html,CSS and javascript.
 
-https://web-platform-zl6a1c.stackblitz.io
+https://stackblitz.com/edit/web-platform-elqyhs?file=script.js
 
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
-
-
+https://web-platform-elqyhs.stackblitz.io
 
 
