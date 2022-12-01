@@ -1,12 +1,5 @@
-# internship-2022
+Create a form to manipulate image dynamically.Idea is if user changes URL,height and width value then on click of submit changes should appear in output image section.
 
-https://web-platform-zl6a1c.stackblitz.io
+https://stackblitz.com/edit/web-platform-szfqsz?file=index.html
 
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
-
-
-
-
+https://web-platform-szfqsz.stackblitz.io
