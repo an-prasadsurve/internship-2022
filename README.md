@@ -1,4 +1,4 @@
-# internship-2022
+create time(fixed) deposit calculator using HTML,CSS and JAVASCRIPT
 
 https://web-platform-zl6a1c.stackblitz.io
 

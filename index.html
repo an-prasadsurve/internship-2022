@@ -1,89 +1,18 @@
-<!Doctypes>
-<html>
-     <head><title>Banking Web Application</title>
- 	<style>
-	 .button {
-	background-color: #008CBA;
-	border : none;
-	color: white;
-	font-size: 12px;
-	text-align: center; 
-	cursor: pointer;
-	}
-	.button {background-color: #008CBA;}
-	</style> 
-     </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
 
-     <body>
-      <h1> Welcome to simple Bank where we can make Banking Simple! </h1>
-	<script>
-	function display(){
-	var name = document.getElementById("name").value;
-	document.getElementById("print1").innerHTML = name;
- 
-            if(document.getElementById('Saving').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Saving").value;
-            } 
-            else if(document.getElementById('Current').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Current").value ;   
-            }   
-	var name = document.getElementById("Amount").value;
-	document.getElementById("print2").innerHTML = Amount;
-}
-</script>  
-
-	<form> 
-	<fieldset> <legend>Account Information</legend>
-	<table>
-	<tr><td>   <label for="name">Enter name: </label></td>
-	<td> <input type="text" id="name"></td></tr> 
-
-	<tr><td><label for="Accounttype">Account Type:</label> </td> 
-	<td><input type="radio" id="Saving" value="Saving">Saving
-	<input type="radio" id="Current" value="Current">Current<td></tr>
-	</table></fieldset>
-
-	<fieldset>
-	<legend>Transactions</legend>
-	<table>
-	<tr><td>Total Balance: </td>
-	<td style-color:"blue">54000</style></td></tr>
-
-	<tr><td>   <label for="Amount">Amount: </label></td>
-	<td> <input type="text" id="Amount"></td></tr> 
-
-	<tr><td>Select what what you want to do</td>
-	<td> <button class="button button1" onclick="display()">Deposit</button></td>
-	<td> <button class="button button2" onclick="display()">Withdraw</button></td></tr>
-
-	<tr><td> <button class="button button3" onclick="display()">View Transaction</button></td></tr>
-	</table></fieldset>
- 
-	<fieldset><legend>Ttansaction Details</legend>
-	<table>
-	<tr><td> Name: </td>
-	<td><p id="print1"></p></td></tr>
-
-	<tr><td> Account Type: </td>
-	<td><p id="disp" > </p></td></tr>
-
-	<tr><td> Initial Balance: </td>
-	<td>54000</td></tr>
-
-	<table><tr><th> Description: </th>
-	<td><p id="print2"></p></td></tr>
-
-	<tr><th> Amount: </th>
-	<td><p id="print3"></p></td></tr>
-
-	<tr><th> Balance: </th>
-	<td><p id="print4"></p></td></tr>
-  </table>
-
-  </table>
-	</fieldset>
-</form>
+</head>
+<body>
+    
+<div id=outer><div class='ac b'>Time Deposit Calculator</div><div id=cover>
+    <form name=mvc><div id=tdr><table class=main><col class=w50><col class=w50><tr><td>Principal<td><input id=principal><tr><td>Interest Rate<td><input id=rate><tr><td>Interest Compounding<td><select id=ci><option value=12>Monthly<option value=4 selected>Quarterly<option value=2>Half-yearly<option value=1>Yearly</select><tr><td>Period (months)<td><input id=time><tr><td><button type=reset>Reset</button><td><button type=button onclick=maturity();>Submit</button><tr><td>Maturity Value<td><input id=mv></table></div></form></div></div>
+    
+    
+<script>function maturity(){var principal=document.getElementById('principal').value;var rate=document.getElementById('rate').value;var ci=document.getElementById('ci').value;var time=document.getElementById('time').value;var irate=rate/ci;var mv=document.getElementById('mv').value;
+    document.getElementById('mv').value=(document.getElementById('principal').value*Math.pow((1 + irate/100),(time/12*ci))).toFixed(2)}
+    </script>
+    
 </body>
 </html>
