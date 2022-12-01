@@ -1,11 +1,8 @@
-# internship-2022
+Question: Create Simple Banking Web Application using HTML, CSS and JavaScript.
 
-https://web-platform-zl6a1c.stackblitz.io
+https://stackblitz.com/edit/web-platform-td8qim?file=index.html
 
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
+https://web-platform-td8qim.stackblitz.io/
 
 
 
