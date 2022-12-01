@@ -1,4 +1,4 @@
-# internship-2022
+Create the to-do list page using HTML, CSS and JavaScript.
 
 https://web-platform-zl6a1c.stackblitz.io
 
