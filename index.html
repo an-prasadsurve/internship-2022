@@ -1,89 +1,39 @@
-<!Doctypes>
-<html>
-     <head><title>Banking Web Application</title>
- 	<style>
-	 .button {
-	background-color: #008CBA;
-	border : none;
-	color: white;
-	font-size: 12px;
-	text-align: center; 
-	cursor: pointer;
-	}
-	.button {background-color: #008CBA;}
-	</style> 
-     </head>
+<!DOCTYPE html>
+<html lang="en">
 
-     <body>
-      <h1> Welcome to simple Bank where we can make Banking Simple! </h1>
-	<script>
-	function display(){
-	var name = document.getElementById("name").value;
-	document.getElementById("print1").innerHTML = name;
- 
-            if(document.getElementById('Saving').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Saving").value;
-            } 
-            else if(document.getElementById('Current').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Current").value ;   
-            }   
-	var name = document.getElementById("Amount").value;
-	document.getElementById("print2").innerHTML = Amount;
-}
-</script>  
+<head>
+	<title>Stopwatch</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 
-	<form> 
-	<fieldset> <legend>Account Information</legend>
-	<table>
-	<tr><td>   <label for="name">Enter name: </label></td>
-	<td> <input type="text" id="name"></td></tr> 
+<body>
+	<div class="container">
+	Limit(In Minutes)<input type="text" name="count">
+  <input type="button" value="Set Limit" id="limit">
+		<div id="time"><br>
+			<span class="digit" id="hr">
+			00</span>
+			<span class="txt">:</span>
+			<span class="digit" id="min">
+			00</span>
+			<span class="txt">:</span>
+			<span class="digit" id="sec">
+			00</span>
+			<span class="txt">:</span>
+			<span class="digit" id="count">
+			00</span>
+		</div><br>
+		<div id="buttons">
+			<button class="btn" id="start">
+			Start</button>
+			<button class="btn" id="stop">
+			Stop</button>
+			<button class="btn" id="reset">
+			clear</button>
+		</div>
+	</div>
 
-	<tr><td><label for="Accounttype">Account Type:</label> </td> 
-	<td><input type="radio" id="Saving" value="Saving">Saving
-	<input type="radio" id="Current" value="Current">Current<td></tr>
-	</table></fieldset>
-
-	<fieldset>
-	<legend>Transactions</legend>
-	<table>
-	<tr><td>Total Balance: </td>
-	<td style-color:"blue">54000</style></td></tr>
-
-	<tr><td>   <label for="Amount">Amount: </label></td>
-	<td> <input type="text" id="Amount"></td></tr> 
-
-	<tr><td>Select what what you want to do</td>
-	<td> <button class="button button1" onclick="display()">Deposit</button></td>
-	<td> <button class="button button2" onclick="display()">Withdraw</button></td></tr>
-
-	<tr><td> <button class="button button3" onclick="display()">View Transaction</button></td></tr>
-	</table></fieldset>
- 
-	<fieldset><legend>Ttansaction Details</legend>
-	<table>
-	<tr><td> Name: </td>
-	<td><p id="print1"></p></td></tr>
-
-	<tr><td> Account Type: </td>
-	<td><p id="disp" > </p></td></tr>
-
-	<tr><td> Initial Balance: </td>
-	<td>54000</td></tr>
-
-	<table><tr><th> Description: </th>
-	<td><p id="print2"></p></td></tr>
-
-	<tr><th> Amount: </th>
-	<td><p id="print3"></p></td></tr>
-
-	<tr><th> Balance: </th>
-	<td><p id="print4"></p></td></tr>
-  </table>
-
-  </table>
-	</fieldset>
-</form>
+	<script src="script.js"></script>
 </body>
+
 </html>
