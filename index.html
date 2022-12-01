@@ -1,89 +1,41 @@
-<!Doctypes>
-<html>
-     <head><title>Banking Web Application</title>
- 	<style>
-	 .button {
-	background-color: #008CBA;
-	border : none;
-	color: white;
-	font-size: 12px;
-	text-align: center; 
-	cursor: pointer;
-	}
-	.button {background-color: #008CBA;}
-	</style> 
-     </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Task</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Add Employee Details</h2>
+    <form action="#" id="formSubmit" method="get">
+        <span>Name</span>
+        <input type="text" placeholder="Enter name" id="name">
+        <span>Age</span>
+        <input type="number" placeholder="Enter age" id="age">
+        <span>Salary</span>
+        <input type="number" placeholder="Enter salary" id="salary">
+        <span>MobileNumber</span>    
+        <input type="number" placeholder="Enter mobile number" id="mb">
+        <span>Department</span>
+        <input type="text" placeholder="Enter department" id="dept">
+        <!-- <input type="submit" value="Submit">   </button>      -->
+        <!-- <input type="submit" value="submit"> -->
+        <button id="entry">Submit</button>
+    </form>
 
-     <body>
-      <h1> Welcome to simple Bank where we can make Banking Simple! </h1>
-	<script>
-	function display(){
-	var name = document.getElementById("name").value;
-	document.getElementById("print1").innerHTML = name;
- 
-            if(document.getElementById('Saving').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Saving").value;
-            } 
-            else if(document.getElementById('Current').checked) { 
-                document.getElementById("disp").innerHTML 
-                    = document.getElementById("Current").value ;   
-            }   
-	var name = document.getElementById("Amount").value;
-	document.getElementById("print2").innerHTML = Amount;
-}
-</script>  
-
-	<form> 
-	<fieldset> <legend>Account Information</legend>
-	<table>
-	<tr><td>   <label for="name">Enter name: </label></td>
-	<td> <input type="text" id="name"></td></tr> 
-
-	<tr><td><label for="Accounttype">Account Type:</label> </td> 
-	<td><input type="radio" id="Saving" value="Saving">Saving
-	<input type="radio" id="Current" value="Current">Current<td></tr>
-	</table></fieldset>
-
-	<fieldset>
-	<legend>Transactions</legend>
-	<table>
-	<tr><td>Total Balance: </td>
-	<td style-color:"blue">54000</style></td></tr>
-
-	<tr><td>   <label for="Amount">Amount: </label></td>
-	<td> <input type="text" id="Amount"></td></tr> 
-
-	<tr><td>Select what what you want to do</td>
-	<td> <button class="button button1" onclick="display()">Deposit</button></td>
-	<td> <button class="button button2" onclick="display()">Withdraw</button></td></tr>
-
-	<tr><td> <button class="button button3" onclick="display()">View Transaction</button></td></tr>
-	</table></fieldset>
- 
-	<fieldset><legend>Ttansaction Details</legend>
-	<table>
-	<tr><td> Name: </td>
-	<td><p id="print1"></p></td></tr>
-
-	<tr><td> Account Type: </td>
-	<td><p id="disp" > </p></td></tr>
-
-	<tr><td> Initial Balance: </td>
-	<td>54000</td></tr>
-
-	<table><tr><th> Description: </th>
-	<td><p id="print2"></p></td></tr>
-
-	<tr><th> Amount: </th>
-	<td><p id="print3"></p></td></tr>
-
-	<tr><th> Balance: </th>
-	<td><p id="print4"></p></td></tr>
-  </table>
-
-  </table>
-	</fieldset>
-</form>
+    <table id="display">
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>MobileNumber</th>
+        <th>Department</th>
+        </tr>
+        </table>
+    </div>
+    <script src="form.js"></script> 
 </body>
 </html>
