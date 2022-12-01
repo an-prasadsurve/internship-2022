@@ -80,6 +80,7 @@ function depositCash() {
     cell2.innerHTML = " Rs " + parseInt(amount).toLocaleString('en-US');
     cell3.innerHTML = " Rs " + totalbalance.toLocaleString('en-US');
 
+    
 }
 
 function displayTrans() {
