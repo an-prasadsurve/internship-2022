@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Application</title>
+    <link rel="stylesheet" href="/project/css/bank.css"/>
+
+</head>
+<body>
+    <h3 class="h3">Welcome to simple Bank where we make banking simple!</h3></body>
+    <form action=" " onsubmit="event.preventDefault();">
+       <fieldset class="box">
+        <legend>Account info</legend>
+        
+         <p class="balance" id="initbal"><b>Total Balance:</b>Rs 54,000</p>
+        <table>
+        <tr>
+           <td> Name:<input type="text" id="name" placeholder="john doe"/></td>
+            
+        <td> Account Type:  Savings <input type="radio"  id="type1"value="savings" unchecked="true"/>  Current<input type ="radio" id="type2"  value="current" unchecked="true" /> </td>
+                </tr>             
+       
+        </table>
+
+        
+        <h5 class="trans">Transactions</h5>
+        <table>
+            <tr>
+        <td>Amount:<input type="text" id="amount" placeholder="500"/></td>
+          <td>select what do you want to do<br>
+                <button type="submit"  id="deposit" value="Deposit" class="colorb" onclick="depositAmt(amt);">Deposit</button>
+                <button type="submit" id="withdraw" value="Withdraw" class="colorb" onclick="withdrawAmt(amt);">Withdraw</button>
+                </td>
+            </tr>
+             </table>
+
+        
+        </fieldset>
+        
+        <button  id="view"class="color">View Transaction</button>
+       
+            <fieldset>
+                <legend class="details">Transaction details</legend>
+                
+            <div id="result1">  
+                </div>
+                <div id="result2">  
+                </div>
+                <div id="result3">  
+                </div>
+                <div id="result4">  
+                </div>
+                <div class="table" id="table">
+                    <table border="4"id="show">
+                    <tr>
+                        <th class="row1">Description</th>
+
+                        <th class="row1">Amount</th>
+                        <th class="row1">Balance</th>
+                    </tr class="row1">
+                    <tr><td>wthdraw</td>
+                    <td>Rs12,000</td>
+                <td>Rs42,000</td>
+                </tr>
+                 <tr class="row1">
+                 <td>Deposit</td>
+                 <td>Rs5,000</td>
+                 <td>Rs47,000</td>
+                </tr>
+                    </div>
+                 </table>
+        </form>
+        <script src="/project/js/bank.js"></script>
+    </body>
+</html>
