@@ -1,4 +1,9 @@
-Question:Create the to-do list page using HTML, CSS and JavaScript.
+Question: Weight convertor web application using HTML, CSS and JavaScript (Atleast 5).
 
-Editor https://stackblitz.com/edit/web-platform-r9qwuw?file=todolist2.js  
-Application URL-//web-platform-r9qwuw.stackblitz.io
+Editor URL-https://stackblitz.com/edit/web-platform-gzljz6?file=styles.css
+Application URL-https://web-platform-gzljz6.stackblitz.io
+
+Question: Create Time(Fixed) deposit calculator using HTML,CSS and JavaScript .
+
+ Editor URL:https://stackblitz.com/edit/web-platform-gx782n?file=index.html
+ Application URL:https://web-platform-gx782n.stackblitz.io
