@@ -1,12 +1,4 @@
-# internship-2022
+Question: Weight convertor web application using HTML, CSS and JavaScript (Atleast 5).
 
-https://web-platform-zl6a1c.stackblitz.io
-
-https://stackblitz.com/edit/angular-ivy-w9j96j?file=src/index.html
-
-
-
-
-
-
-
+Editor URL-https://stackblitz.com/edit/web-platform-gzljz6?file=styles.css
+Application URL-https://web-platform-gzljz6.stackblitz.io

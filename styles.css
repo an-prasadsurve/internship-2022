@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+  }
+  body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #output {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(4, 150, 77, 0.964);
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgb(232, 232, 232);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 51px;
+    width: 390px;
+  }
+  span {
+    color: red;
+  }
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+  }
+  input {
+    border: 1px solid black;
+    outline: none;
+    background: yellow;
+    color: black;
+  }
+  select {
+    outline: 5x solid black;
+    width: 170px;
+  }
+  button {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    background: #0cafff;
+    cursor: pointer;
+  }
+  h1 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 25px;
+  }
+  p {
+    font-weight: bold;
+  }
+  
