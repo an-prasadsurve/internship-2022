@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Input Field</title>
+    <br>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Dynamic Input Field  </h1>
+      <div>
+      count of input field:
+      <br>
+      <div id="TextBoxContainer"></div>
+      <input name = "Dynamic Input Field" id="createform" type="text" /> 
+      <p>
+     <input type="button" id ="form" value="Create Form"/>
+     <br>
+     <br>
+<input type="text" placeholder="php" id="cf-php">
+<br>
+<br>
+<input type="text" placeholder="node" id="cf-node">
+<br>
+<br>
+<input type="text" placeholder="mongodb" id="cf-mongodb">
+<br>
+<br>
+<input type="text" placeholder="ionic" id="cf-ionic">
+<br>
+<br>
+<input type="text" placeholder="angular" id="cf-angular">
+<br>
+<br>
+<button type="submit" onclick="test()" class="form-control" id="submit-button" name="submit">submit</button>
+<script type="text/javascript">
+  function test() {
+    let inputphp = document.getElementById("cf-php").value;
+    let inputnode = document.getElementById("cf-node").value;
+    let inputangular = document.getElementById("cf-angular").value;
+    let inputionic = document.getElementById("cf-ionic").value;
+    let inputmongodb = document.getElementById("cf-mongodb").value;
+
+    let total = (inputphp + '\n' + inputnode + '\n' + inputangular + '\n' + inputmongodb + '\n' + inputionic );
+  }
+</script>
+</body>
+</html>
+
+
