@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Dynamic Input Field
+		</title>
+	</head>
+<style>
+input{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #514caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #394caa;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+	<h1 style="color :blue">Dynamic input field</h1>
+	<div>
+   count of input field<br><input id="input" type="number" placeholder="Input a number ">
+   <br><br>
+   <input id ="btn" value="Create Form" type="submit"></input> <br><br>
+   <p id="output"></p> 
+   <input id ="btn" SUBMIT" type="submit"></input> <br><br>
+
+   
+
+</div>
+   <script>
+	
+	const No = document.getElementById("input");
+	const B = document.getElementById("btn");
+	const out1 = document.getElementById("output");
+  let x =""
+	function demo()
+	{
+		for (let i = 0; i < No.value; i++) {
+            x += '<input type="text" id="MytxBox' + i + '" name=""><br/>';
+        }
+		document.getElementById("output").innerHTML = x;
+		
+	}
+	B.addEventListener('click',demo);
+   </script>
+</body>
+</html>
+
+
