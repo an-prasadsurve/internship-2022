@@ -3,5 +3,5 @@ Nowrosjee Wadia College
 
 Assignment Question:
 Create AutoComplete Form using html css javascript
-Project URL:   https://stackblitz.com/edit/js-h6pgxx
+Project URL: https://js-h6pgxx.stackblitz.io
 Application URL: https://js-h6pgxx.stackblitz.io
