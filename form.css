@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+}
+
+/* form*/
+.form{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 5vh;
+    padding-bottom: 10px;
+}
+.form label{
+    margin-left: 10vh;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+.row2{
+    margin-top: -2vh;
+}
+.btn{
+    text-align: right;
+    margin-right: 10vh;
+}
+
+/* Table css*/
+table{
+    margin-left: 30vh;
+}
+table, th, td {
+    border: 1px solid black;
+} 

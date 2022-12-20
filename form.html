@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <title>
+        form
+    </title>
+</head>
+<body>
+       <h2><u>STUDENT MARKSHEET</u></h2>
+
+    <form method="post" action="#" class="form" >
+      <fieldset>
+        <legend><u>STUDENTS INFORMATION</u></legend>
+        
+        <div class="row">
+            <div><label for="">Name:</label></div>
+            <div><input type="text" id="name" oninput="isValidData('name','name_error')"></div>
+            <div><label for="">Father Name:</label></div>
+            <div><input type="text" id="fname" oninput="isValidData('fname','fname_error')"></div>
+        </div>
+
+        <div class="row">
+            <div><label for="">Institute Name:</label></div>
+            <div><input type="text" id="iname" oninput="isValidData('iname','iname_error')"></div>
+            <div><label for="">Batch:</label></div>
+            <div><input type="text" id="batch" oninput="isValidData('batch','batch_error')"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><u>SUBJECT MARKS</u></legend>
+        <div class="row1">
+            <div><label for="">Office Automation:</label></div>
+            <div><input type="number" id="m1" oninput="isValidData('m1','m1_error')">&nbspOut of 100</br></div>
+            <div><label for="">Web Designing:</label></div>
+            <div><input type="number" id="m2" oninput="isValidData('m2','m4_error')">&nbsp Out of 100</br></div>
+            <div><label for="">IT:</label></div>
+            <div><input type="number" id="m3" oninput="isValidData('m3','m3_error')">&nbsp Out of 100</br></div>
+            <div><label for="">C# Programing:</label></div>
+            <div><input type="number" id="m4" oninput="isValidData('m4','m4_error')">&nbsp Out of 100</br></div>           
+        </div>
+      </fieldset>
+
+        <div class="row2">
+            <div class="btn">
+                <button type="submit" id="btn1">Submit</button>
+                <button type="reset" id="btn2">Reset</button>
+            </div>
+        </div>
+    </form>
+
+    <table>
+        <tr><th colspan="2">Students Information</th></tr>
+        <tr><td>Name:</td><td>&nbsp;</td></tr>
+        <tr><td>Father Name:</td><td>&nbsp;</td></tr>
+        <tr><td>Institute Name:</td><td>&nbsp;</td></tr>
+        <tr><td>Batch</td><td></td>&nbsp;</tr>
+        
+        <tr><th colspan="2">Subjects Marks</th></tr>
+        <tr><td>Office Automation:</td><td>&nbsp;</td></tr>
+        <tr><td>Web Designing:</td><td>&nbsp;</td></tr>
+        <tr><td>IT:</td><td>&nbsp;</td></tr>
+        <tr><td>C# Programing:</td><td>&nbsp;</td></tr>
+
+        <tr><th colspan="2">Marks Result</th></tr>
+        <tr><td>Total:</td><td>&nbsp;</td></tr>
+        <tr><td>Percentage:</td><td></td></tr>
+        <tr><td>Grade:</td><td></td></tr>
+    </table>
+</body>
+</html>
