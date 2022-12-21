@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Banking Management</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="project.js"></script>
+        <link rel="stylesheet" href="project.css">
+      
+<body>
+    <section>
+    <form method="post" action="#" class="form" >
+        <h2><b>Welcome to Simple Bank where we make banking simple!</b></h2>
+        <fieldset>
+            <legend>Account Info</legend>
+            <div class="total">
+            <b>Total Balance:</b><span>Rs54,000</span>
+            </div>
+            <div class="name">
+                <b>Name:</b>
+                <input type="text" id="name" oninput="isValidData('name','name_error')" placeholder="">
+                <b>Account Type:</b>
+                    <label for="Savings">Savings</label>
+                    <input type="radio" id="scales" name="save" value="1" checked/>
+                    <label for="Current">Current</label>
+                    <input type="radio" id="scales" name="current" value="2"/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Transactions</legend>
+            <div class="name">
+                <b>Amount:</b>
+                <input type="text" id="acctBalanceLbl" placeholder="">
+                <div class="search">
+                <heading>Select what you want to do</heading>
+                <br>
+                    <a href="#"> <button class="btnn" id="userDeposit" required>Deposit</button></a>
+                    <a href="#"> <button class="btnn" id="userWithdraw" required>Withdraw</button></a>
+                </div>
+            </div>
+        </fieldset>
+                <a href="#"> <button class="btn">View Transaction</button></a>
+            <fieldset>
+                <legend>Transaction Details</legend>
+                <div class="acct">
+                Name:<b>John Doe</b><br>
+                Account:<b>Saving</b><br>
+                Initial Balance:<b>Rs54,000</b>
+                <table id="display">
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Balance</th>
+                    </tr>
+                     <tr>
+                     <td>Withdraw</td>
+                     <td>Rs12,000</td>
+                     <td>Rs42,000</td>
+                    </tr>
+                    <tr>
+                      <td>Deposit</td>
+                      <td>Rs5,000</td>
+                      <td>47,000</td>
+                    </tr>
+                  </table>
+                  </div>
+            </fieldset>
+        </form>
+        </section>
+
+</body>
+</html>
