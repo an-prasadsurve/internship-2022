@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Expense Manager </title>
+        <link rel="stylesheet" type=text/css href="ass.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <h2>Add a new item here<h2>
+                <div id="textdiv">
+                 <div class="input"> 
+                   Type: <select name="type" id="type">
+                        <option value="card">Card</option>
+                        <option value="cash">Cash</option>
+                        </select>
+                    </div>
+                    <div class="input1">
+                        Name: <input type="text" name="name" id="name" placeholder="what did you spend on?">  
+                   </div>
+                </div>
+                
+                   <div id="textdiv1">
+                <div class="input"> 
+                     Date: <input type="date" name="date" id="date"> 
+                </div>
+                <div class="input1">
+                    Amount: <input type="number" name="amount" id="amount" placeholder="How much?">
+                </div>
+            </div>
+            </div>
+        
+                <!--div class="input" id="textdiv">
+                    Date: <input type="date" name="date" id="date">
+                </div-->
+        
+                <!--div class="input" id="textdiv">
+                    Amount: <input type="number" name="amount" id="amount" placeholder="How much?">
+                </div-->
+                <!--div>
+                    <input type="button" id="button" value="Add a New Expenses">
+                </div-->
+                
+
+        </div>
+        <button id="add">add a new expense</button>
+                <table id="display">
+                    <tr>
+                      <th>type</th>
+                      <th>name</th> 
+                      <th>date</th>
+                      <th class="amount">amount</th>
+                    </tr>
+                </table>
+                
+
+            <script src="ass.js"></script>
+
+            </body>
+        </html>
