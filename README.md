@@ -1,7 +1,6 @@
-Question: Create a simple expense manager web application using HTML, CSS and JavaScript.
-Question: Weight convertor web application using HTML, CSS and JavaScript (Atleast 5).
+Question: Create time(fixed) Deposit Calculator using using HTML, CSS and JavaScript.
 
-Editor URL-https://stackblitz.com/edit/web-platform-gzljz6?file=styles.css
-Application URL-https://web-platform-gzljz6.stackblitz.io
+Editor URL-https://stackblitz.com/edit/js-5od4zr?file=style.css
+Application URL-https://js-5od4zr.stackblitz.io
 
 
